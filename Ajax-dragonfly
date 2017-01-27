@@ -25,3 +25,5 @@ rchange[1].addEventListener('click', function(){
     };
     xhr.send();
 });
+
+// modifier intro, side et ajouter test de display pour ouvrir ou fermer au clique
