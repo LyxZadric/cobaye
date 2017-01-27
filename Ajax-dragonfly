@@ -1,15 +1,27 @@
-var side = document.getElementById('sidebar');
-var intro = document.getElementsByClassName('introtext');
+var nav = document.getElementById('nav');
+var d = document.createElement('div');
+var conteneur = nav.appendChild(d);
+conteneur.setAttribute('id', 'cont');
+conteneur.style.width = "200px";
+conteneur.style.heigth = "200px";
+conteneur.style.display = "none";
 
-var xhr = new XMLHttpRequest();
+var rchange = document.getElementsByClassName('anav');
+rchange[1].addEventListener('click', function(){
+
+    var side = document.getElementById('sidebar');
+    var intro = document.getElementsByClassName('introtext');
+
+    var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://www.dragonflybsd.org/recentchanges/");
     xhr.onload = function() {
-    var parser = new DOMParser();
-    var page = parser.parseFromString(this.responseText, "text/html");
-    var committer = page.getElementsByClassName('committer');
-    var change = page.getElementsByClassName('changelog');
+        var parser = new DOMParser();
+        var page = parser.parseFromString(this.responseText, "text/html");
+        var committer = page.getElementsByClassName('committer');
+        var change = page.getElementsByClassName('changelog');
         
-    intro[0] = committer[0].innerText;
+        intro[0] = committer[0].innerText;
    
-  };
+    };
     xhr.send();
+});
