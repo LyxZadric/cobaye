@@ -5,59 +5,103 @@
         <title></title>
     </head>
     <body>
-        <form class="formulaire" action="index.html" method="post">
+        <form class="formulaire" action="index.html" method="post" id="formu">
             <fieldset >
                 <legend>Informations personnelles</legend>
 
                 <p>Civilités * :
-                <label for="Monsieur"> Monsieur :</label>
-                <input type="radio" value="Monsieur" name="Monsieur">
+               	<label for="Monsieur"> Monsieur :</label>
+          	    	<input type="radio" value="Monsieur" name="radio" required>
                 <label for="Madame"> Madame :</label>
-                <input type="radio" value="Madame" name="Madame">
+                	<input type="radio" value="Madame" name="radio" required>
                 </p>
 
                 <p>
-                <label for="Nom"> Nom :</label>
-                <input type="text" name="Nom" >
-                <label for="Prenom"> Prénom :</label>
-                <input type="text" name="Prenom" >
+                <label for="Nom"> Nom * :</label>
+                	<input type="text" name="Nom" required>
+               	<label for="Prenom"> Prénom :</label>
+                	<input type="text" name="Prenom" >
                 </p>
 
                 <p>
                 <label for="Adresse"> Adresse :</label>
-                <input type="text" name="Adresse" >
+                	<input type="text" name="Adresse" >
                 <label for="Ville"> Ville :</label>
-                <input type="text" name="Ville" >
+                	<input type="text" name="Ville" >
                 </p>
 
                 <p>
-                <label for="CodePostal"> Code postal :</label>
-                <input type="text" name="CodePostal" >
+                <label for="CodePostal"> Code postal * :</label>
+               		<input type="text" name="CodePostal" required>
                 <label for="Pays"> Pays :</label>
-                <input type="text" name="Pays" >
+                	<input type="text" name="Pays" >
                 </p>
 
                 <p>
                 <label for="Telephone"> Téléphone :</label>
-                <input type="text" name="telephone" >
-                <label for="Courriel"> Courriel :</label>
-                <input type="email" name="courriel" >
+                	<input type="text" name="telephone">
+                <label for="Courriel"> Courriel * :</label>
+               		<input type="email" name="courriel" required>
                 </p>
 
             </fieldset>
-                <legend> Informations complémentaires</legend>
+               
+            <fieldset>
+ 				<legend> Informations complémentaires</legend>
 
                 <p>
-                <label for="depuisquand"> Depuis quand connaissez vous notre société </label>
-
-            <fieldset>
-
+                <label for="depuisquand"> Depuis quand connaissez vous notre société : </label>
+                	<input type="date" name="date">
+                </p>
+                <p>
+                <label for="quel"> Quel est la nature de votre activité ? </label>
+                	<select name="activite"> 
+                		<option> Communication </option>
+                		<option> Web digital</option>
+                		<option> Développement</option>
+                		<option> Web-Marketing</option>
+                	</select>
+				</p>
             </fieldset>
-
-
-
-
-
+            
+            <fieldset>
+            	<legend> Message </legend>
+            	<p>
+            	<label for="sujet"> Sujet du message * : </label>
+            		<input type="text" name="sujet" required>
+            	</p>
+            	<p>
+            	<label for="message"> Message * : </label><br>
+            		<textarea cols="30" rows="10" required>
+            	
+            		</textarea>
+            	</p>
+            	<p>	
+            	<label for="fichier"> Fichier joint : </label>
+            		<input type="file" name="fichier">
+            	</p>
+            	<p>	
+            	<input type="checkbox" name="choose"> 
+            	<label for="choose"> Recevoir notre newsletter </label><br>
+            	<input type="checkbox" name="choose-1"> 
+            	<label for="choose"> Recevoir une copie de ce message </label>
+            	</p>
+            </fieldset>
+            
+            <fieldset>
+            <p>
+   				<label for="recopier"> Veuillez recopier le code suivant * : </label><br>
+   					<img src="https://c22blog.files.wordpress.com/2010/10/input-black.gif" alt="captcha" width="20%"><br>
+   				<input type="button" name="bouton" onClick="window.location.reload()" value="recharger">
+   			</p>
+   				<input type="text" name="texte">
+   			</p>
+            </fieldset>
+            
+        <p> * Champs requis</p>
+        <input type="submit" name="envoyer" value="envoyer">
+        <a href="#formu"> <input type="submit" name="réinitiliser" value="réinitialiser" onCLick="window.location.reload()"></a>
+        
         </form>
     </body>
 </html>
