@@ -1,0 +1,70 @@
+body
+{
+background : url('images/bg_body.png');
+
+}
+.container
+{
+    width : 960px;
+    margin : auto;
+}
+/******************************************************************************
+HEADER
+******************************************************************************/
+header
+{
+    background: url('images/bg_header.jpg') no-repeat;
+    height: 175px;
+    position : relative;
+    bottom : 10px;
+}
+.titre-container
+{
+    width: 760px;
+    height: 70px;
+    margin: auto;
+    border : 1px solid white;
+    position : relative;
+    top : 50px;
+}
+header h1
+{
+    text-align : center;
+    color : white;
+    position : relative;
+    bottom : 5px;
+}
+/******************************************************************************
+MAIN
+******************************************************************************/
+main
+{
+    background-color: white;
+    position : relative;
+    bottom : 30px;
+}
+article
+{
+    width: 640px;
+    margin : auto;
+}
+/******************************************************************************
+FOOTER
+******************************************************************************/
+footer
+{
+    height: 180px;
+    background-color: #183957;
+}
+footer.container
+{
+    height: 760px;
+}
+footer p
+{
+    color: white;
+}
+footer a
+{
+    color: #c0ebec;
+}
