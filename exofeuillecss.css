@@ -1,7 +1,7 @@
 body
 {
-background : url('images/bg_body.png');
-
+background : url('images/bg_body.png') repeat-x;
+height: 1000px;
 }
 .container
 {
@@ -42,12 +42,40 @@ main
     background-color: white;
     position : relative;
     bottom : 30px;
+    padding-top : 50px;
 }
 article
 {
     width: 640px;
     margin : auto;
+    border : 1px solid black;
 }
+.article-title
+{
+  height: 80px;
+  background-color : #318397;
+  color : white;
+  position : relative;
+  bottom : 27px;
+}
+#content-title
+{
+  font-size : 2em;
+}
+.article-main
+{
+  padding-left : 20px;
+  padding-right: 20px;
+  padding-bottom : 20px;
+  position : relative;
+  bottom : 20px;
+}
+.article-main p
+{
+  text-align: justify;
+}
+/*********************/
+
 /******************************************************************************
 FOOTER
 ******************************************************************************/
@@ -55,10 +83,13 @@ footer
 {
     height: 180px;
     background-color: #183957;
+    padding-top : 30px;
+    padding-bottom : 30px;
 }
-footer.container
+#cont-foot
 {
-    height: 760px;
+    width: 760px;
+    margin: auto;
 }
 footer p
 {
