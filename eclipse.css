@@ -1,0 +1,89 @@
+body
+{
+    width : 100%;
+    margin : auto;
+}
+/*******************************************************************************
+HEADER
+*******************************************************************************/
+header
+{
+    background : url("../images/bg_header.jpg") no-repeat;
+    width : 1200px;
+    height: 280px;
+    margin: auto;
+}
+#fb-btn
+{
+    background : url("../images/social-fb.png");
+}
+/*******************************************************************************
+NAVIGATION
+*******************************************************************************/
+
+#main-nav
+{
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+    background-color : #d43839;
+}
+.container li
+{
+    display : inline;
+}
+.list-hidden
+{
+    display: none;
+}
+/*******************************************************************************
+SERVICE
+*******************************************************************************/
+#services
+{
+    width : 1200px;
+    height : 465px;
+    margin: auto;
+}
+.service
+{
+    width : 320px;
+    display : inline-block;
+}
+.hidden-text
+{
+    visibility : hidden;
+}
+/*******************************************************************************
+PORTFOLIO
+*******************************************************************************/
+#portfolio
+{
+    background-color : #e5e5e5;
+    width: 1200px;
+    height: 540px;
+    margin : auto;
+}
+#portfolio-left
+{
+    display : inline-block;
+}
+#portfolio-right
+{
+    display : inline-block;
+}
+/*******************************************************************************
+FOOTER
+*******************************************************************************/
+footer
+{
+    background-color : #f84242;
+    width: 1200px;
+    height: 355px;
+    margin: auto;
+}
+.footer-col
+{
+    width: 320px;
+    display : inline-block;
+}
