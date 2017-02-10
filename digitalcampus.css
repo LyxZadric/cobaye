@@ -1,0 +1,143 @@
+body
+{
+    width: 1366px;
+    margin : auto;
+}
+.container
+{
+    width : 980px;
+    margin : auto;
+}
+/*******************************************************************************
+HEADER - positionnement général
+*******************************************************************************/
+header
+{
+    background : url("sources/Fond header.png") no-repeat;
+    width: 1366px;
+    margin : auto;
+}
+#header-top
+{
+    padding-top : 35px;
+}
+#logo
+{
+    margin-top : 0px;
+    display : inline;
+    padding-left: 10px;
+}
+form
+{
+    display : inline;
+    width : 300px;
+    margin-right : 10px;
+}
+input
+{
+    height: 30px;
+}
+#nav-header ul
+{
+    display : inline;
+}
+#nav-header li
+{
+    display : inline;
+}
+/*******************************************************************************
+HEADER - dans le détail
+*******************************************************************************/
+a
+{
+    color : white;
+    text-decoration : none;
+}
+#nav-header
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+0,414141+0,000000+100 */
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #000000 0%, #414141 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #000000 0%,#000000 0%,#414141 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #000000 0%,#000000 0%,#414141 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    height: 35px;
+    width: 960px;
+    border : 1px solid black;
+}
+#main-nav ul
+{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+#social-nav
+{
+    margin-right: 40px;
+}
+#social-nav li
+{
+    padding-right: 10px;
+}
+#slider
+{
+
+}
+/*******************************************************************************
+MAIN - positionnement général
+*******************************************************************************/
+main
+{
+    width : 960px;
+    margin : auto;
+}
+#works-content
+{
+    width : 620px;
+    float:left;
+}
+#works section
+{
+    width: 140px;
+    display : inline-block;
+}
+aside
+{
+    width: 300px;
+    float: right;
+}
+/*******************************************************************************
+MAIN  - dans le détail
+*******************************************************************************/
+
+
+
+
+
+
+/*******************************************************************************
+FOOTER - positionnement général
+*******************************************************************************/
+footer
+{
+    clear : both;
+    height: 270px;
+    background-color: black;
+}
+#footer-container
+{
+    width: 960px;
+    margin : auto;
+    text-align: center;
+}
+footer section
+{
+    width: 220px;
+    display : inline-block;
+}
+footer p
+{
+    color : white;
+}
+/*******************************************************************************
+FOOTER - dans le détail
+*******************************************************************************/
