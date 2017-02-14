@@ -38,29 +38,69 @@ header
     height : 200px;
     float: right;
 }
+#social-nav ul
+{
+    height: 30px;
+    width: 120px;
+    display : flex;
+    list-style : none;
+    margin-right : 0px;
+    padding-right : 0px;
+    padding-bottom : 10px;
+}
 #fb-btn
 {
     background : url("../images/social-fb.png") no-repeat;
     font-size : 0px;
-    width : 25px;
-    height: 25px;
-    display : block;
+    width : 30px;
+    height: 30px;
+    background-color : rgba(0,0,0, 0.2);
+    display : inline-block;
+    margin-right: 5px;
 }
 #tw-btn
 {
     background : url("../images/social-tw.png") no-repeat;
     font-size : 0px;
-    width : 25px;
-    height: 25px;
+    width : 30px;
+    height: 30px;
+    background-color : rgba(0,0,0, 0.2);
     display : inline-block;
+    margin-right: 5px;
 }
 #gp-btn
 {
     background : url("../images/social-g.png") no-repeat;
     font-size : 0px;
-    width : 25px;
-    height: 25px;
+    width : 30px;
+    height: 30px;
+    background-color : rgba(0,0,0, 0.2);
     display : inline-block;
+    margin-right: 5px;
+}
+#search-form
+{
+    height : 30px;
+    display : flex;
+}
+#keywords
+{
+    height: 30px;
+    background-color : rgba(255,255,255, 0.2);
+    border : none;
+    color : black;
+    margin-right: 0px;
+    padding : 0px;
+}
+#search-btn
+{
+    background : url("../images/loupe.png") no-repeat;
+    font-size : 0px;
+    width : 30px;
+    height: 30px;
+    border : none;
+    background-color : rgba(0,0,0, 0.2);
+    margin-left: 0px;
 }
 /*******************************************************************************
 NAVIGATION
@@ -80,7 +120,7 @@ NAVIGATION
     width : 700px;
     margin : auto;
 }
-.container li
+#main-nav li
 {
     display : inline;
     padding-right : 70px;
@@ -93,6 +133,13 @@ NAVIGATION
 .list-hidden
 {
     display : none;
+}
+#ombre
+{
+    background : url("../images/ombre.png") no-repeat;
+    width: 960px;
+    height: 50px;
+    margin : auto;
 }
 /*******************************************************************************
 SERVICE
@@ -118,7 +165,7 @@ SERVICE
 }
 .service
 {
-    margin-top : 85px;
+    margin-top : 35px;
     width : 220px;
     height: 220px;
     display : inline-block;
