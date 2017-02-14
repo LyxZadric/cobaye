@@ -1,6 +1,6 @@
 body
 {
-    width: 1366px;
+
     margin : auto;
 }
 .container
@@ -13,13 +13,14 @@ HEADER - positionnement général
 *******************************************************************************/
 header
 {
-    background : url("sources/Fond header.png") no-repeat;
-    width: 1366px;
+    background : url("sources/Fond-header.png") repeat-x;
     margin : auto;
 }
 #header-top
 {
     padding-top : 35px;
+    display : flex;
+    alig-items : center;
 }
 #logo
 {
@@ -30,24 +31,38 @@ header
 form
 {
     display : inline;
-    width : 300px;
+    width : 350px;
+    padding-left : 400px;
     margin-right : 10px;
 }
 input
 {
     height: 30px;
+    background-color: black;
+    border : none;
+    border-radius : 5px;
 }
-#nav-header ul
+input:nth-of-type(1)
+{
+    width: 200px;
+    background: url("sources/icone-loupe.png") no-repeat;
+    background-color: black;
+    padding-left : 30px;
+}
+input:nth-of-type(2)
+{
+    color : #ffcc33;
+    width:55px;
+}
+#main-nav
 {
     display : inline;
 }
-#nav-header li
+#main-nav li
 {
     display : inline;
+    color : #9c9c9c;
 }
-/*******************************************************************************
-HEADER - dans le détail
-*******************************************************************************/
 a
 {
     color : white;
@@ -64,31 +79,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     height: 35px;
     width: 960px;
     border : 1px solid black;
+    display : flex;
+    align-items : center;
 }
-#main-nav ul
+#main-nav
 {
-    margin-top: 13px;
-    margin-bottom: 13px;
+    display : flex;
+}
+#main-nav li
+{
+    padding-right: 45px;
 }
 #social-nav
 {
     margin-right: 40px;
+    display : flex;
+    align-items : center;
+    padding-top : 5px;
+    padding-left : 150px;
+    margin-right : 40px;
 }
 #social-nav li
 {
     padding-right: 10px;
+    list-style: none;
 }
 #slider
 {
 
 }
 /*******************************************************************************
-MAIN - positionnement général
+MAIN
 *******************************************************************************/
 main
 {
     width : 960px;
+    height : 550px;
     margin : auto;
+    margin-top : 100px;
+    margin-bottom : 100px;
 }
 #works-content
 {
@@ -100,20 +129,80 @@ main
     width: 140px;
     display : inline-block;
 }
+#works h3
+{
+    color : black;
+}
+#works h4
+{
+    color : #ffcc33;
+}
+.more-btn
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ececec+40,cccccc+60,cccccc+100 */
+background: #ececec; /* Old browsers */
+background: -moz-linear-gradient(top,  #ececec 0%, #ececec 40%, #cccccc 60%, #cccccc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ececec 0%,#ececec 40%,#cccccc 60%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ececec 0%,#ececec 40%,#cccccc 60%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    border : 1px solid #999999;
+    border-radius : 5px;
+    width: 60px;
+    height : 20px;
+
+}
+.more-btn a
+{
+    color : #999999;
+    text-align: center;
+}
+/*******************************************************************************
+ASIDE
+*******************************************************************************/
 aside
 {
     width: 300px;
-    float: right;
+    float:right;
+    padding-top : 50px;
 }
-/*******************************************************************************
-MAIN  - dans le détail
-*******************************************************************************/
-
-
-
-
-
-
+.tweet-item
+{
+    background-color : #e4e4e4;
+    border : 1px solid black;
+    border-radius : 5px;
+    height: 75px;
+    text-align : left;
+    padding-left : 10px;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    margin-bottom : 10px;
+}
+.tweet-item p
+{
+    margin : 0px;
+}
+.tweet-item a
+{
+    color : #03a7ec;
+}
+.tweet-time
+{
+    color : #999999;
+    font-size : 0.9
+}
+#twitter-btn
+{
+    background-color : #03a7ec;
+    width: 300px;
+    height: 75px;
+    border : 1px solid black;
+    border-radius: 5px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size : 1.5em;
+}
 /*******************************************************************************
 FOOTER - positionnement général
 *******************************************************************************/
