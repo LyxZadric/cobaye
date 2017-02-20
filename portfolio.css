@@ -1,0 +1,50 @@
+#cont-portfolio
+{
+    width : 960px;
+    display : flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: baseline;
+    margin-top : 80px;
+    margin-bottom : 80px;
+}
+#cont-designweb
+{
+    display: flex;
+    flex-direction: column;
+    margin : 0px;
+}
+#cont-designprint
+{
+    display : flex;
+    flex-direction: column;
+}
+h1
+{
+    display : none;
+    text-align : center;
+    margin-bottom : 50px;
+}
+section
+{
+    display : flex;
+    width : 465px;
+    height: 160px;
+}
+.presentation
+{
+    display : flex;
+    flex-direction: column;
+}
+.presentation p
+{
+    word-wrap : hidden;
+}
+.presentation input
+{
+    width : 140px;
+    height : 30px;
+    border-radius : 5px;
+    background-color : grey;
+    margin-left: 105px;
+}
