@@ -1,0 +1,169 @@
+/* =======================================
+   		      BASE
+======================================= */
+html{
+  font-size: 100%;
+  font-family: 'Open Sans', verdana, sans-serif;
+}
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hidden-text{
+  font-size: 0;
+  margin: 0;
+}
+/* =======================================
+   	      	TYPOS
+======================================= */
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+figure{
+  margin: 0;
+}
+img{
+  display: block;
+}
+nav li a{
+  display: block;
+}
+/* =======================================
+   		      HEADER
+======================================= */
+header{
+    background : url("../images/mer-ciel-1.jpg");
+    height: 460px;
+}
+.header{
+    display : flex;
+}
+/* Logo */
+#logo{
+    width : 150%;
+}
+/********** HEADER RIGHT */
+#header-right{
+    padding-top : 1em;
+    padding-left : 50%;
+}
+/* Top menu */
+#top-nav ul{
+    display : flex;
+}
+#top-nav a{
+    color : white;
+    padding : 0.5em;
+    text-decoration : underline;
+}
+#top-nav a:hover{
+    text-decoration : none;
+    background-color : rgba(255,255,255,0.5);
+    border-radius : 5px 5px 0px 0px;
+}
+/* Search form */
+#search-form{
+    padding-left: 5em;
+}
+.recherche{
+    max-width: 200px;
+    height: 30px;
+    margin : 0;
+    border-radius: 5px 0px 0px 5px;
+    border : none;
+}
+.valider{
+    background: url("../images/loupe.png") no-repeat;
+    background-color : rgba(255, 255, 255, 0.5);
+    border-radius : 0px 5px 5px 0px;
+    border : none;
+    width: 25px;
+    height: 30px;
+    padding-top : 11px;
+    margin : 0 auto;
+}
+
+/* =======================================
+   		      NAVIGATION
+======================================= */
+#main-nav{
+    height: 35px;
+    background: linear-gradient(to bottom, #899db8 0%,#8a9eb8 0%,#6b819f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#main-nav ul{
+    max-width: 780px;
+    height: 35px;
+    margin : auto;
+    display : flex;
+}
+#main-nav li{
+    justify-content: center;
+    border-right: 1px solid white;
+    padding-top: 5px;
+    padding-left : 2.5em;
+    padding-right: 2.5em;
+}
+#main-nav li:hover{
+    background: linear-gradient(to top, #899db8 0%,#8a9eb8 0%,#6b819f 100%);
+}
+#main-nav li:nth-of-type(1){
+    border-left: 1px solid white;
+}
+#main-nav a{
+    color : white;
+}
+/* =======================================
+   		      MAIN
+======================================= */
+
+
+/*********** PART 1 */
+#main-part-1{
+    display : flex;
+    justify-content: space-between;
+    margin-top : 3em;
+    margin-bottom : 3em;
+}
+.item{
+    max-width: 350px;
+    height: 425px;
+    text-align : center;
+    background-color : #eaeff2;
+    border-radius : 10px;
+}
+
+/*********** Part 2 */
+#main-part-2{
+
+}
+
+/*********** Part 3 */
+#main-part-3{
+
+}
+
+/* =======================================
+   		      FOOTER
+======================================= */
+footer{
+
+}
+
+/* =======================================
+   		      MEDIA QUERIES
+======================================= */
+
+@media all and (min-width: 640px) {}
+
+@media all and (min-width: 961px) {}
